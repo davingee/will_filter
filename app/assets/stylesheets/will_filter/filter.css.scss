@@ -175,4 +175,7 @@
   padding-top:2px;
 }
 
-
+/* will_filter bootstrap overwrite */
+.bs_wf table.values { width: 100%; }
+.bs_wf table td { padding: 0; border-top: 0px; }
+.wf_exporter { width: auto !important; }
