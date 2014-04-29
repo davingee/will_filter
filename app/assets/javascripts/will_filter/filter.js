@@ -190,7 +190,7 @@ Wf.Filter.prototype = {
 	},
 	submit: function() {
     if (this.original_form_action != "") 
-        Wf.element('wf_form').action = this.original_form_action;
+        // Wf.element('wf_form').action = this.original_form_action;
 		
     Wf.element('wf_submitted').value = 'true';
     Wf.submit('wf_form');
@@ -381,7 +381,7 @@ Wf.Exporter.prototype = {
 	  Wf.element("wf_export_fields").value = fields;
 	}, 
   exportFilter: function() {
-		if (wfFilter.original_form_action == "")
+    if (wfFilter.original_form_action == "")
       wfFilter.original_form_action = Wf.element('wf_form').action;
 			
     this.updateExportFields();
